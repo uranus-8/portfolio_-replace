@@ -1,0 +1,91 @@
+.main
+  .visual
+    img
+      width: 100%
+      height: auto
+
+      .sp
+        padding-top: 10%
+
+.maintitle
+  position: absolute
+  bottom: 4%
+  left: 5%
+
+.sub-title
+  font-size: 1.24rem
+  color: #c9c9c9
+
+@media (min-width: 1200px)
+  .main
+    .visual
+      text-align: center
+
+      img
+        height: 100vh
+        width: auto
+        padding-top: 0%
+        margin-top: -44px
+
+    h2
+      font-size: 7.2rem
+      z-index: 1
+
+  .maintitle
+    bottom: 6%
+    left: 11%
+
+@media (min-width: 1920px)
+  .main
+    .visual
+      img
+        padding-top: 0
+
+// .three-container
+//   width: 100%
+//   height: 100vh
+//   background-color: transparent
+
+.loader
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 10px
+
+.loading-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background-color: black
+  z-index: 9999
+  opacity: 1
+  transition: opacity 0.8s ease
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &.fade-out
+    opacity: 0
+
+.spinner-border
+  width: 2rem
+  height: 2rem
+
+.loading-text
+  color: white
+  font-size: 1.0rem
+  margin-top: 20px
+
+/* Breakpoints */
+#particles-js-home,
+#particles-js-experience,
+#particles-js-project,
+#particles-js-contact
+  position: absolute
+  width: 100%
+  height: 100%
+  background: #000000
+  z-index: -1

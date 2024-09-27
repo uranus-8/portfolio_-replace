@@ -1,0 +1,364 @@
+:root
+  --background: #000000
+  --textcolor: #ffffff
+  --bs-border-width: 0 !important
+
+/* Bootstrap overrides */
+.btn
+      --bs-btn-border-width: 0 !important
+
+.btn-primary
+  background: linear-gradient(135deg, #77818e, #84969a)
+  border: none !important
+  border-color: none
+  transition: all 1s ease
+  opacity: 1
+  --bs-border-width: 0 !important
+
+.btn-lg, .btn-group-lg > .btn
+  min-width: 200px
+  --bs-border-width: 0 !important
+
+.navbar-dark .navbar-nav .nav-link
+  color: var(--textcolor)
+
+.btn-primary:focus, .btn-primary.focus
+  color: var(--textcolor)
+  background-color: none
+  border-color: none
+  box-shadow: none
+  border: none
+
+.btn-primary:hover
+  border: none
+  transition: all 1s ease
+  opacity: 0.8
+
+.btn-group-lg>.btn, .btn-lg 
+    --bs-btn-padding-y: 0.5rem
+    --bs-btn-padding-x: 1rem
+    --bs-btn-font-size: 1.25rem
+    --bs-btn-border-radius: var(--bs-border-radius-lg)
+    --bs-border-width: 0 !important
+
+
+/* Font lato */
+.lato-thin
+  font-family: "Lato", sans-serif
+  font-weight: 100
+  font-style: normal
+
+.lato-light
+  font-family: "Lato", sans-serif
+  font-weight: 300
+  font-style: normal
+
+.lato-regular
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  font-style: normal
+
+.lato-bold
+  font-family: "Lato", sans-serif
+  font-weight: 700
+  font-style: normal
+
+.lato-black
+  font-family: "Lato", sans-serif
+  font-weight: 900
+  font-style: normal
+
+.lato-thin-italic
+  font-family: "Lato", sans-serif
+  font-weight: 100
+  font-style: italic
+
+.lato-light-italic
+  font-family: "Lato", sans-serif
+  font-weight: 300
+  font-style: italic
+
+.lato-regular-italic
+  font-family: "Lato", sans-serif
+  font-weight: 400
+  font-style: italic
+
+.lato-bold-italic
+  font-family: "Lato", sans-serif
+  font-weight: 700
+  font-style: italic
+
+.lato-black-italic
+  font-family: "Lato", sans-serif
+  font-weight: 900
+  font-style: italic
+
+/* Font ibm-plex-sans */
+.ibm-plex-sans-jp-regular
+  font-family: "IBM Plex Sans JP", sans-serif
+  font-weight: 400
+  font-style: normal
+
+/* Table */
+.pl-table
+  justify-content: space-between
+  max-width: 1640px
+
+  .rower
+    margin: 5px 0
+    padding: 0 20px
+    align-items: center
+
+  .coller
+    overflow: hidden
+    text-overflow: ellipsis
+    box-sizing: border-box
+    margin-bottom: 10px
+
+    > img
+      width: 100%
+      height: auto
+
+  .pl-tbody
+    .rower
+      padding-top: 7px
+      padding-bottom: 7px
+      color: #979797
+      font-size: 11px
+
+    &.scroll
+      max-height: 100px
+      overflow-x: scroll
+
+/* Initialization */
+body
+  background: var(--background) !important
+  height: 100vh
+  margin: 0
+  padding: 0
+  color: var(--textcolor) !important
+  font-size: 0.85rem
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl
+  width: 100%
+  padding-right: 0px !important
+  padding-left: 0px !important
+
+.content
+  position: relative
+  z-index: 1
+  color: var(--textcolor)
+  margin-top: 56px
+
+.close-icon
+  font-size: 1.5rem
+  color: rgba(255, 255, 255, 0.5)
+
+.bg-dark
+  background-color: #00000000 !important
+
+.pad-20
+  padding: 20% 5%
+
+.pad-y-10
+  padding: 10% 0% 2%
+
+.w100
+  width: 100%
+  height: auto
+
+.absolute-footer
+  position: absolute
+  bottom: 5%
+  left: 50%
+  transform: translateX(-50%)
+
+.absolute
+  position: absolute
+
+.aboutsec img
+  width: 30%
+  height: auto
+
+p, li, footer
+  font-size: 0.85rem
+
+/* Structure */
+.pc
+  display: none !important
+
+.sp
+  display: inline-block !important
+
+.main h2
+  font-size: 2.2rem
+
+h3
+  font-size: 2.0rem
+  position: relative
+
+h4
+  font-size: 1.14rem
+  font-weight: bold
+
+.gradient-text
+  background: linear-gradient(135deg, #c9c9c9, #ffffff)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+
+.section-conts
+  position: relative
+  line-height: 1.8
+  width: 100%
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  color: var(--textcolor)
+  z-index: 1
+  overflow: hidden
+
+.project-conts img
+  max-width: 1280px
+
+.conts .right-conts img
+  max-width: 600px
+  height: auto
+
+.conts .left-conts p
+  max-width: 600px
+
+.container-fluid.ibm-plex-sans-jp-regular.works-page .header-wrapper
+  background-color: rgba(0, 0, 0, 0.5)
+
+.pab-5
+  padding-bottom: 5px
+
+.btn-lg
+  font-size: 1.05rem
+  border: 0 !important
+
+.sp-img
+  width: 100%
+
+/* Breakpoints */
+@media (min-width: 1200px)
+  .pc
+    display: inline-block !important
+
+  .sp
+    display: none !important
+
+  body
+    font-size: 0.95rem
+
+  .section-conts::before
+    top: 39%
+
+  .pl-table div
+    font-size: 0.92rem
+
+  h3
+    font-size: 3.75rem !important
+
+  .inline_blc
+    display: inline-block
+    vertical-align: top
+
+  .aboutsec img
+    width: 200px
+    height: auto
+
+  p, li
+    font-size: 0.97rem
+
+  .conts .left-conts
+    margin-right: 5%
+
+  // .pad-y-10
+  //   padding: 10px 0 71px
+
+  .pad-y-10
+    padding: 10% 0% 15%
+
+  .pab-5
+    padding-bottom: 30px
+
+  .btn-lg
+    font-size: 1.25rem
+    border: 0 !important
+
+  .pl-table .rower
+    width: 33.3%
+
+/* Header & Navigation */
+.u-logo
+  width: 48%
+  height: auto
+
+.logo
+  padding-left: 5%
+  padding-top: 4%
+
+.logo h1
+  font-size: 1.5rem
+
+.navbar
+  padding: 10px 0 0 0
+  z-index: 1030
+  width: 100%
+
+.navbar-collapse.show
+  position: fixed
+  top: 64px
+  left: 0
+  right: 0
+  background-color: #343a40
+  height: calc(100% - 56px)
+  overflow-y: auto
+
+.navbar-toggler
+  border: none
+  background-color: transparent
+  padding: 0.25rem 0.75rem
+  position: absolute
+  top: 10px
+  right: 22px
+  z-index: 1040
+
+.navbar-toggler:focus,
+.navbar-toggler:active
+  outline: none
+  box-shadow: none
+
+.navbar-toggler-icon
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+
+.navbar-nav .nav-link
+  padding-left: 1.35rem
+
+.nav-link
+  padding: 1.2rem 1rem
+  font-weight: bold
+
+@media (min-width: 1200px)
+  .u-logo
+    width: 200px
+    heigith: auto
+
+  .logo
+    padding-left: 2%
+    padding-top: 1.6%
+
+  .logo h1
+    text-align: left
+
+  .navbar
+    margin-right: 20px
+
+  .bg-dark
+    background-color: #00000000 !important
+
